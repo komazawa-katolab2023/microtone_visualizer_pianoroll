@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>可変分割数ピアノ</title>
+    <style>
+        .key {
+            width: 40px;
+            height: 120px;
+            border: 1px solid black;
+            display: inline-block;
+            margin: 2px;
+            text-align: center;
+            vertical-align: bottom;
+        }
+        #frequencies {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <label for="division">分割数:</label>
+    <input type="number" id="division" min="1" max="36" value="12">
+    <button id="setDivision">設定</button>
+    <div id="piano"></div>
+    <div id="frequencies"></div>
+    <script src="script.js"></script>
+</body>
+</html>
